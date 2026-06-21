@@ -17,7 +17,7 @@ public class RegisterRequestValidator:AbstractValidator<RegisterRequest>
             .MinimumLength(6).WithMessage("Password must be at least 6 characters long.");
         RuleFor(x=>x.PersonName).NotEmpty().WithMessage("Person name cant be blank.")
             .MaximumLength(100).WithMessage("Person name must be less than 100 characters.");
-        RuleFor(x => x.Gender).NotEmpty().WithMessage("Gender is required.");
+        RuleFor(x => x.Gender).NotEmpty().WithMessage("Gender is required..");
     }
 }
 
