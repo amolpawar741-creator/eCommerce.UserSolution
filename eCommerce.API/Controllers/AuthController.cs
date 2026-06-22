@@ -15,7 +15,7 @@ public class AuthController : ControllerBase
     {
         _userservice = userService;
     }
-    [HttpPost("Register")]
+    [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest registerRequest)
     {
         if(registerRequest is null)
@@ -36,7 +36,7 @@ public class AuthController : ControllerBase
 
 
     }
-    [HttpPost("Login")]
+    [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest loginreq)
     {
         if (loginreq is null)

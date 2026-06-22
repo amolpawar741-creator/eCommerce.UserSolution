@@ -27,7 +27,7 @@ internal class UserService : IUserService
         {
             return null;
         }
-        return _mapper.Map<AuthenticationResponse>(request) with { Success = true, Token = "token" };
+        return _mapper.Map<AuthenticationResponse>(user) with { Success = true, Token = "token" };
 
         //return new AuthenticationResponse(user.UserId, user.Email, user.PersonName, user.Gender, "token", Success: true);
     }
